@@ -1,0 +1,101 @@
+<!-- Navbar from here https://github.com/javascriptacademy-stash/responsive-navbar -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <title>Navigation bar</title>
+  </head>
+  <body>
+    <header>
+      <div id="brand"><a>Tommy Mann</a></div>
+      <nav>
+        <ul>
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="/about">Resume</a></li>
+          <li id="login"><a href="/login" >Login</a></li>
+          <li id="signup"><a href="/signup">Signup</a></li>
+        </ul>
+      </nav>
+	  
+	 
+      <div id="hamburger-icon" >
+	  
+		
+        <div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+		
+        <ul class="mobile-menu">
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="/about">Resume</a></li>
+          <li id="login"><a href="/login" >Login</a></li>
+          <li id="signup"><a href="/signup">Signup</a></li>
+        </ul>
+		
+		<div style= "cursor: pointer; opacity: 0;position:fixed; top:2; right:20 ;z-index= 9; display: block; width: 35px; height : 35px;" onclick="toggleMobileMenu()">
+			</div>
+      </div>
+	  
+    </header>
+	
+	<section id="aboutme" style="background-color: #253863; padding-bottom: 30px">
+		<br>
+		<h1 style="text-align: center;">	About Me 	</h1>
+		<p style="text-align: center; padding-left: 5%; padding-right: 5%; max-width: 1500px" class="center">		   
+				Hi there! I'm Tommy &#40They/Them&#41, a game programmer with a passion for programming AI and Networking!
+				I graduated from Champlain College with a Bachelors in Game Programming and Minor in Mathematics.
+				   <br>
+				   <br>
+				Here you can see the fun projects that I have worked on and projects I am working on currently!
+		</p>
+	</section>
+	
+	<section id="projects">
+		<h1 style="text-align: center; padding-bottom: 20; padding-top:20px; background-color: #0e0b0e">	
+			Projects 	</h1>
+		
+		<div class="center">
+			<img id = "FrogBath" src="FrogBath.png" class="center" style="width:30%; height:auto%; max-width: 350px;">
+			<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; max-width: 700px;" >	
+				A local/online multiplayer platformer game with the ultimate goal of finding out which one of you and your friends can give the best bath!
+				<br>
+				Made with Unreal Engine 4<br>
+				<a href="https://store.steampowered.com/app/1283630/Frog_Bath/" target="_blank" rel="noopener noreferrer" class="link">Available for free on Steam!! </a>
+			</p>
+			<br>
+			My Contributions!
+			<br>
+			
+			
+			<br>
+		 
+			<div class="auto-resizable-iframe">
+			<div>
+				<iframe frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/1VGP2ESc2FU"></iframe>
+			</div>
+		</div>
+		</div>
+		
+		
+		
+		   <br><br>
+		   <br><br><br>
+		   <br><br>
+		   <br><br>
+		   <br><br>
+		   <br><br>
+		   <br><br><br>
+		   <br><br>
+		   <br><br>
+		   <br><br>
+		   <br><br>
+		   <br>
+	</section>
+	<script src="index2.js"></script>
+  </body>
+</html>
