@@ -1,11 +1,14 @@
 <!-- Navbar from here https://github.com/javascriptacademy-stash/responsive-navbar -->
+<!-- Auto Positioning containers from https://www.w3schools.com/w3css/w3css_responsive.asp -->
 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style2.css" />
+	
     <title>Tommy Mann</title>
   </head>
   <body>
@@ -51,7 +54,7 @@
 	  
     </header>
 	
-	<section id="aboutme" style="background-color: #002687; padding-bottom: 30px">
+	<section id="aboutme" style="background-color: #002687; padding-bottom: 30px; ">
 		<br>
 		<h1 style="text-align: center;">	About Me 	</h1>
 		<p style="text-align: center; padding-left: 5%; padding-right: 5%; max-width: 1500px" class="center">		   
@@ -67,109 +70,158 @@
 		<h1 style="text-align: center; padding-bottom: 10; padding-top:10px; background-color: #010012;">	
 			Projects 	</h1>
 		
-		<div class="center" >
-			<img id = "FrogBath" src="FrogBath.png" class="center" style="width:50%; height:auto%; max-width: 400px;">
-			<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; max-width: 700px;" >	
-				A local/online multiplayer platformer game with the ultimate goal of finding out which one of you 
-				and your friends can give the best bath!<br>
-			</p>
-			<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 700px;" >
-				Made with Unreal Engine 4<br>
-				<a href="https://store.steampowered.com/app/1283630/Frog_Bath/" target="_blank" rel="noopener noreferrer" class="link">Available for free on Steam! </a>
-			</p>
-			<br>
-			<div class="list-container">
-				<div style="text-align: center; padding-bottom: 10px; font-size: 18px"><b>My Contributions!</b></div>
-				
-				
-				<ul>
-					<li>Lead Programmer</li>
-					<li>Programming the Player Movement</li>
-					<li>Animation Programming</li>
-					<li>Organizing Programmer Meeting and Helping with General Programming Tasks</li>
-				</ul>
-				
-			</div>
-			<br>
-		 
-			<div class="auto-resizable-iframe">
-				<div>
-					<iframe frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/1VGP2ESc2FU"></iframe>
-				</div>
-			</div>
-			<br>
-		</div>
+		<div class="w3-row " id="FirstRow">
 		
-		<div class="center" style= "padding-top:10px">
-		
-			<div class="mainRunner" id="GoatDeathContainer" >
-				<img class="img1" src="Pentagram.png"  style="width:20%; height:auto%; max-width: 170px;" class="rotate"/>
-				<img class="img2" id="SuperGoatDeath" src="SuperGoatDeath.gif"  style="width:70%; height:auto%; max-width: 600px;"/>
-			</div>
-			
-			<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 700px; position: relative;" >	
-				An intense Twin Stick Bullet Hell where it is your job to get rid of Demons that have made there way out of Hell.<br>
+			<div id = "FrogBath" class="center w3-container w3-half w3-border" style="">
+				<img id = "FrogBathTitle" src="FrogBath.png" class="center" style="width:50%; height:auto%; max-width: 400px;">
+				<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; max-width: 700px;" >	
+					A local/online multiplayer platformer game with the ultimate goal of finding out which one of you 
+					and your friends can give the best bath!<br>
+				</p>
+				<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 700px;" >
+					Made with Unreal Engine 4<br>
+					<a href="https://store.steampowered.com/app/1283630/Frog_Bath/" target="_blank" rel="noopener noreferrer" class="link">Available for free on Steam! </a>
+				</p>
+				<br>
+				<div class="list-container">
+					<div style="text-align: center; padding-bottom: 10px; font-size: 18px"><b>My Contributions!</b></div>
 					
-			</p>
-			<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 700px;" >
-				Made with Unity<br>
-				<a href="https://d-tommy-d.itch.io/supergoatdeath" target="_blank" rel="noopener noreferrer" class="link">Available for free on Itch.io! </a>
-			</p>
-			<br>
-			<div class="list-container">
-				<div style="text-align: center; padding-bottom: 10px; font-size: 18px"><b>My Contributions!</b></div>
-				
-				
-				<ul>
-					<li>Programmed Player Movement, Bullet Patterns, Boss AI, Menus, Audio Behaviour, and Tutorial</li>
-					<li>Drew Unique Art Assets that drip with style!</li>
-				</ul>
-				
-			</div>			
-			
-			<br>
-		
-			<div class="auto-resizable-iframe">
-				<div>
-					<iframe frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/wbdGUs2za4M"></iframe>
-				</div>
-			</div>
-			<br>
-		</div>
-		
-		<div class="center" style= "padding-top:10px">
-		
-			<div class="mainRunner" id="GoatDeathContainer" >
-				<img class="img1" src="Pentagram.png"  style="width:20%; height:auto%; max-width: 170px;" class="rotate"/>
-				<img class="img2" id="SuperGoatDeath" src="SuperGoatDeath.gif"  style="width:70%; height:auto%; max-width: 600px;"/>
-			</div>
-			
-			<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 700px; position: relative;" >	
-				An intense Twin Stick Bullet Hell where it is your job to get rid of Demons that have made there way out of Hell.<br>
 					
-			</p>
-			<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 700px;" >
-				Made with Unity<br>
-				<a href="https://d-tommy-d.itch.io/supergoatdeath" target="_blank" rel="noopener noreferrer" class="link">Available for free on Itch.io! </a>
-			</p>
-			<br>
-			<div class="list-container">
-				<div style="text-align: center; padding-bottom: 10px; font-size: 18px"><b>My Contributions!</b></div>
-				
-				
-				<ul>
-					<li>Programmed Player Movement, Bullet Patterns, Boss AI, Menus, Audio Behaviour, and Tutorial</li>
-					<li>Drew Unique Art Assets that drip with style!</li>
-				</ul>
-				
-			</div>			
-			
-			<br>
-		
-			<div class="auto-resizable-iframe">
-				<div>
-					<iframe frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/wbdGUs2za4M"></iframe>
+					<ul>
+						<li>Lead Programmer</li>
+						<li>Programming the Player Movement</li>
+						<li>Animation Programming</li>
+						<li>Organizing Programmer Meeting and Helping with General Programming Tasks</li>
+					</ul>
+					
 				</div>
+				<br>
+			
+				<div class="auto-resizable-iframe">
+					<div>
+						<iframe frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/1VGP2ESc2FU"></iframe>
+					</div>
+				</div>
+				<br>
+			</div>
+			
+			<div id = "SuperGoatDeath" class="center w3-container w3-half w3-border" style="">
+			
+				<div class="mainRunner" id="GoatDeathContainer" style="">
+					<img class="img1 rotate pixelart" src="Pentagram.png"  style="width:20%; height:auto%; max-width: 170px;" />
+					<img class="img2 pixelart" id="SuperGoatDeathTitle" src="SuperGoatDeath.gif"  style="width:90%; height:auto%; max-width: 650px;"/>
+				</div>
+				
+				<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 700px; position: relative;" >	
+					An intense Twin Stick Bullet Hell where it is your job to get rid of Demons that have made there way out of Hell.<br>
+						
+				</p>
+				<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 600px;" >
+					Made with Unity<br>
+					<a href="https://d-tommy-d.itch.io/supergoatdeath" target="_blank" rel="noopener noreferrer" class="link">Available for free on Itch.io! </a>
+				</p>
+				<br>
+				<div class="list-container">
+					<div style="text-align: center; padding-bottom: 10px; font-size: 18px"><b>My Contributions!</b></div>
+					
+					
+					<ul>
+						<li>Programmed Player Movement, Bullet Patterns, Boss AI, Menus, Audio Behaviour, and Tutorial</li>
+						<li>Drew Unique Art Assets that drip with style!</li>
+					</ul>
+					
+				</div>			
+				
+				<br>
+			
+				<div class="auto-resizable-iframe">
+					<div>
+						<iframe frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/wbdGUs2za4M"></iframe>
+					</div>
+				</div>
+				<br>
+			</div>
+		</div>	
+		
+		<div class="w3-row " >
+			<div class="center w3-container w3-half w3-border" style= "padding-top:0px">
+			
+				<img id="Navai" src="Navai.png"  class="center pixelart" style="width:70%; height:auto%; max-width: 800px;"/>
+				<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 700px; position: relative;" >	
+					A tool for the Unity Engine that allows users to create NavMeshes and generate believable AI routes. 
+						It is still in development and unreleased, but is progress on it has been consistent and fast!<br>
+					
+						<br>
+				</p>
+				<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 700px;" >
+					Made with Unity<br>
+				</p>
+				<br>
+				<div class="list-container">
+					<div style="text-align: center; padding-bottom: 10px; font-size: 18px"><b>My Contributions!</b></div>
+					<ul>
+						<li>Tool for users to create their own Navigation Meshes</li>
+						<li>A Star path finding which finds the most optimal route in a set of Nodes on a Mesh</li>
+						<li>My own original Path Smoothing like Algorithm (still don't know what to call it) 
+										where a set of points on a mesh can be both optimized and made to be a much more believable (no zig zagging ai!)</li>
+					</ul>
+				</div>			
+				
+				<br>
+				<div class="w3-row " style="padding-left: 0px; ">
+					<div class="w3-container w3-half ">
+						<img id = "MergePoints" src="MergePoints.gif" style="width:100%; height:auto">
+						<p>
+							You can create new triangles on the Mesh by clicking on the edge and dragging.<br>
+								<br>
+							Merging Points on the Mesh is as simple as dragging your desired point over the point you want to merge with!<br>
+						</p>
+					</div>
+					<div class="w3-container w3-half ">
+						<img id = "PathFind" src="PathFind.gif" style="width:100%; height:auto;">
+						<p>
+							PathFinding is done by treating each triangle on the mesh as a potential PathNode<br>
+							<br>
+							The Black Line represents the most straight away path through the triangles<br>
+						</p>
+					</div>
+				</div> 
+				<div class="w3-row " style="padding-left: 0px; ">
+					<div class="w3-container w3-half ">
+						<img id = "PathFollow" src="PathFollow.gif" style="width:100%; height:auto;">
+						<p>
+							The AI unit will smoothly follow the vertices on the path!
+						</p>
+					</div>
+				</div> 
+				
+				
+			</div>
+			<div class="center w3-container w3-half w3-border" style= "padding-top:0px">
+			
+				<img id="SealedSorcery" src="SealedSorcery.png"  class="center pixelart" style="width:70%; height:auto%; max-width: 800px;"/>
+				<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 700px; position: relative;" >	
+					A local/online Smash Brothers like game with a twist in that players are only able to use their special abilities once per round. Made for the 2018 Touhou Game Jam.<br>
+					<br>
+				</p>
+				<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 700px;" >
+					Made with Unity<br>
+					<a href="https://361rjb.itch.io/sealed-sorcery" target="_blank" rel="noopener noreferrer" class="link">Available for free on Itch.io! </a>
+				</p>
+				<br>
+				<div class="list-container">
+					<div style="text-align: center; padding-bottom: 10px; font-size: 18px"><b>My Contributions!</b></div>
+					<ul>
+						<li>Physics Programming</li>
+						<li>Attack/Animation Programming</li>
+						<li>Network Programming</li>
+					</ul>
+				</div>			
+				
+				<br>
+				
+				<img id="SealedSorceryMatch" src="SealedSorceryMatch.png"  class="center pixelart" style="width:70%; height:auto%; max-width: 800px;"/>
+				
 			</div>
 		</div>
 	</section>
