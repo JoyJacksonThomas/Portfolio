@@ -32,6 +32,7 @@ window.onload = function() {
 	SuperGoatDeath = document.getElementById("SuperGoatDeath");
 	FirstRow = document.getElementById("FirstRow");
 	
+	
 	goatTitleHeight = document.getElementById("SuperGoatDeathTitle").height;
 	document.getElementById("GoatDeathContainer").style.height = goatTitleHeight;
 };

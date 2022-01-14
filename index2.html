@@ -20,7 +20,7 @@
 			<ul>
 			<li><a href="#aboutme">About Me</a></li>
 			<li><a href="#projects">Projects</a></li>
-			<li><a href="/about">Resume</a></li>
+			<li><a href="#resume">Resume</a></li>
 			<li><a href="/login" >Contact</a></li>
 			</ul>
 		</div>
@@ -41,38 +41,51 @@
 					
 					<li><a href="#aboutme" >About Me</a></li>
 					<li><a href="#projects">Projects</a></li>
-					<li><a href="/about">Resume</a></li>
+					<li><a href="#resume">Resume</a></li>
 					<li><a href="/login" >Contact</a></li>
 					</ul>
 				</section>
 			</section>
 			
-			<div style= "cursor: pointer; opacity: 0;position:fixed; top:2; right:20 ;z-index= 9; display: block; width: 35px; height : 35px;" onclick="toggleMobileMenu()">
+			<div style= "cursor: pointer; opacity: 0; position:fixed; top:2; right:7 ;z-index= 9; display: block; width: 44px; height : 35px;" onclick="toggleMobileMenu()">
 				</div>
 		
 		</div>
 	  
     </header>
 	
-	<section id="aboutme" style="background-color: #002687; padding-bottom: 30px; ">
+	<section id="aboutme" style="background-color: #002687; padding-bottom: 30px;">
 		<br>
-		<h1 style="text-align: center;">	About Me 	</h1>
-		<p style="text-align: center; padding-left: 5%; padding-right: 5%; max-width: 1500px" class="center">		   
-				Hi there! I'm Tommy &#40They/Them&#41, a game programmer with a passion for programming AI and Networking!
-				I graduated from Champlain College with a Bachelors in Game Programming and Minor in Mathematics.
-				   <br>
-				   <br>
-				Here you can see the fun projects that I have worked on and projects I am working on currently!
-		</p>
+		<div class="w3-row">
+			
+			<div class="w3-container w3-third" style="">
+				<img id = "TommyPic" src="TommyPic.png"  class="center" style="width:80%; height:auto%; max-width: 200px; ">
+			</div>
+			<div class="w3-container w3-twothird" style="">
+				<h1 style="text-align: center; margin: 0px 0px 0px 0px;max-width: 700px;">	About Me 	</h1>
+				<p style="text-align: center; padding-left: 0%; padding-right: 0%; max-width: 700px; " class="">		   
+					Hi there! I'm Tommy &#40They/Them&#41, a game programmer with a passion for programming AI and Networking!
+					I graduated from Champlain College with a Bachelors in Game Programming and Minor in Mathematics.
+					<br>
+					<br>
+					Here you can see the fun projects that I have worked on and projects I am working on currently!
+		
+				</p>
+			</div>
+		</div>
+		
+		
 	</section>
 	
-	<section id="projects" style=" background-color: 121212;">
-		<h1 style="text-align: center; padding-bottom: 10; padding-top:10px; background-color: #010012;">	
+	<section id="projects" style=" background-color: #121212; ">
+		<h1 style="text-align: center; background-color: #010012;
+			margin: 0px 0px 0px 0px; 
+			padding: 5px 0px 5px 0px;">	
 			Projects 	</h1>
 		
-		<div class="w3-row " id="FirstRow">
+		<!-- <div class="w3-row " id="FirstRow"> -->
 		
-			<div id = "FrogBath" class="center w3-container w3-half w3-border" style="">
+			<div id = "FrogBath" class="center" style="">
 				<img id = "FrogBathTitle" src="FrogBath.png" class="center" style="width:50%; height:auto%; max-width: 400px;">
 				<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; max-width: 700px;" >	
 					A local/online multiplayer platformer game with the ultimate goal of finding out which one of you 
@@ -105,7 +118,7 @@
 				<br>
 			</div>
 			
-			<div id = "SuperGoatDeath" class="center w3-container w3-half w3-border" style="">
+			<div id = "SuperGoatDeath" class="center" style="">
 			
 				<div class="mainRunner" id="GoatDeathContainer" style="">
 					<img class="img1 rotate pixelart" src="Pentagram.png"  style="width:20%; height:auto%; max-width: 170px;" />
@@ -141,10 +154,10 @@
 				</div>
 				<br>
 			</div>
-		</div>	
+		<!-- </div> -->	
 		
-		<div class="w3-row " >
-			<div class="center w3-container w3-half w3-border" style= "padding-top:0px">
+		<!-- <div class="w3-row "  				<div class="center w3-container w3-half w3-border" style= "padding-top:0px">-->  
+			<div class="center " style= "padding-top:0px">
 			
 				<img id="Navai" src="Navai.png"  class="center pixelart" style="width:70%; height:auto%; max-width: 800px;"/>
 				<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 700px; position: relative;" >	
@@ -168,7 +181,7 @@
 				</div>			
 				
 				<br>
-				<div class="w3-row " style="padding-left: 0px; ">
+				<div class="w3-row center" style="padding-left: 0px; width: 90%; max-width: 1000px">
 					<div class="w3-container w3-half ">
 						<img id = "MergePoints" src="MergePoints.gif" style="width:100%; height:auto">
 						<p>
@@ -186,7 +199,7 @@
 						</p>
 					</div>
 				</div> 
-				<div class="w3-row " style="padding-left: 0px; ">
+				<div class="w3-row center" style="padding-left: 0px; width: 90%; max-width: 1000px">
 					<div class="w3-container w3-half ">
 						<img id = "PathFollow" src="PathFollow.gif" style="width:100%; height:auto;">
 						<p>
@@ -197,7 +210,8 @@
 				
 				
 			</div>
-			<div class="center w3-container w3-half w3-border" style= "padding-top:0px">
+			
+			<div class="center " style= "padding-top:0px">
 			
 				<img id="SealedSorcery" src="SealedSorcery.png"  class="center pixelart" style="width:70%; height:auto%; max-width: 800px;"/>
 				<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 700px; position: relative;" >	
@@ -223,7 +237,11 @@
 				<img id="SealedSorceryMatch" src="SealedSorceryMatch.png"  class="center pixelart" style="width:70%; height:auto%; max-width: 800px;"/>
 				
 			</div>
-		</div>
+		<!-- </div> -->
+	</section>
+	
+	<section id="resume" style=" background-color: blue; ">
+		
 	</section>
 	<script src="index2.js"></script>
   </body>
