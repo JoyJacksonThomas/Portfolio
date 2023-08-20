@@ -1,5 +1,6 @@
 <!-- Navbar from here https://github.com/javascriptacademy-stash/responsive-navbar -->
 <!-- Auto Positioning containers from https://www.w3schools.com/w3css/w3css_responsive.asp -->
+<!-- Audio Player Stylings from https://codepen.io/tomma5o/pen/jrKQYz-->
 
 <html lang="en">
   <head>
@@ -12,6 +13,7 @@
     <title>Tommy Mann</title>
   </head>
   <body>
+  
     <header>
       <div id="brand"><a>Tommy Mann</a></div>
 
@@ -54,121 +56,215 @@
 	  
     </header>
 	
+	<div class="tabs">
+  
+  <input type="radio" id="tab1" name="tab-control" checked>
+  <input type="radio" id="tab2" name="tab-control">
+  <input type="radio" id="tab3" name="tab-control">  
+  <input type="radio" id="tab4" name="tab-control">
+  <ul >
+  <tabPanel>
+    <li title="Features"><label for="tab1" role="button"><svg viewBox="0 0 24 24"><path d="M14,2A8,8 0 0,0 6,10A8,8 0 0,0 14,18A8,8 0 0,0 22,10H20C20,13.32 17.32,16 14,16A6,6 0 0,1 8,10A6,6 0 0,1 14,4C14.43,4 14.86,4.05 15.27,4.14L16.88,2.54C15.96,2.18 15,2 14,2M20.59,3.58L14,10.17L11.62,7.79L10.21,9.21L14,13L22,5M4.93,5.82C3.08,7.34 2,9.61 2,12A8,8 0 0,0 10,20C10.64,20 11.27,19.92 11.88,19.77C10.12,19.38 8.5,18.5 7.17,17.29C5.22,16.25 4,14.21 4,12C4,11.7 4.03,11.41 4.07,11.11C4.03,10.74 4,10.37 4,10C4,8.56 4.32,7.13 4.93,5.82Z"/>
+</svg><br><span>Features</span></label></li>
+    <li title="Delivery Contents"><label for="tab2" role="button"><svg viewBox="0 0 24 24"><path d="M2,10.96C1.5,10.68 1.35,10.07 1.63,9.59L3.13,7C3.24,6.8 3.41,6.66 3.6,6.58L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.66,6.72 20.82,6.88 20.91,7.08L22.36,9.6C22.64,10.08 22.47,10.69 22,10.96L21,11.54V16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V10.96C2.7,11.13 2.32,11.14 2,10.96M12,4.15V4.15L12,10.85V10.85L17.96,7.5L12,4.15M5,15.91L11,19.29V12.58L5,9.21V15.91M19,15.91V12.69L14,15.59C13.67,15.77 13.3,15.76 13,15.6V19.29L19,15.91M13.85,13.36L20.13,9.73L19.55,8.72L13.27,12.35L13.85,13.36Z" />
+</svg><br><span>Delivery Contents</span></label></li>
+    <li title="Shipping"><label for="tab3" role="button"><svg viewBox="0 0 24 24">
+    <path d="M3,4A2,2 0 0,0 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V12L20,8H17V4M10,6L14,10L10,14V11H4V9H10M17,9.5H19.5L21.47,12H17M6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5M18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5Z" />
+</svg><br><span>Shipping</span></label></li>    <li title="Returns"><label for="tab4" role="button"><svg viewBox="0 0 24 24">
+    <path d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
+</svg><br><span>Returns</span></label></li>
+  </tabPanel>
+  </ul>
+  
+  <div class="slider"><div class="indicator"></div></div>
+  <div class="content">
+    <section>
+      <h2>Features</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dolorem sequi, quo tempore in eum obcaecati atque quibusdam officiis est dolorum minima deleniti ratione molestias numquam. Voluptas voluptates quibusdam cum?</section>
+        <section>
+          <h2>Delivery Contents</h2>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quas adipisci a accusantium eius ut voluptatibus ad impedit nulla, ipsa qui. Quasi temporibus eos commodi aliquid impedit amet, similique nulla.</section>
+        <section>
+          <h2>Shipping</h2>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam nemo ducimus eius, magnam error quisquam sunt voluptate labore, excepturi numquam! Alias libero optio sed harum debitis! Veniam, quia in eum.</section>
+    <section>
+          <h2>Returns</h2>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta vero rerum? Eaque repudiandae architecto libero reprehenderit aliquam magnam ratione quidem? Nobis doloribus molestiae enim deserunt necessitatibus eaque quidem incidunt.</section>
+  </div>
+</div>
+	
 	<section id="aboutme" style="background-color: #002687; padding-bottom: 30px; " >
 		<br>
 		
-		<h1 class="center"style="text-align: center; max-width: 800px;">	About Me 	</h1>
-		<p class="center"style="text-align: center;  max-width: 800px;" >		   
-			Hi there! I'm Tommy &#40They/Them&#41, a game programmer with a passion for programming AI and Networking!
-			I graduated from Champlain College with a Bachelors in Game Programming and Minor in Mathematics.
-			<br>
-			<br>
-			Here you can see the fun projects that I have worked on and projects I am working on currently!
 		
-		</p>
+		
+		<div class="w3-row center" class=""style="width: 100%; max-width: 1800px;">
+		
+			<div id="TommyPic" class="w3-container w3-third">
+				<img src="TommyPic.png" class="center" style="width:100%; height:auto; max-width: 220px">
+			</div>
+			<div class="w3-container w3-twothird ">
+				<h1 class="center"style="text-align: center; ">	About Me 	</h1>
+				<p class="center"style="text-align: center;  max-width: 800px;" >		   
+					Hi there! I'm Tommy, a game programmer with a passion for programming AI, Networking, and Game Design!
+					I graduated from Champlain College with a Bachelors in Game Programming and Minor in Mathematics.
+					<br>
+					<br>
+					Here you can see the fun projects that I have worked on and projects I am working on currently!
+			
+				</p>
+			</div>
+		</div>
+		
 		
 	</section>
 	
 	<section id="projects" style=" background-color: #121212; ">
+	
+  
+  
+	
 		<h1 style="text-align: center; background-color: #010012;
 			margin: 0px 0px 0px 0px; 
 			padding: 5px 0px 5px 0px;">	
 			Projects 	</h1>
 		
-		<!-- <div class="w3-row " id="FirstRow"> -->
-		
-			<div id = "FrogBath" class="center" style="padding-bottom: 30px;">
-				<img id = "FrogBathTitle" src="FrogBath.png" class="center" style="width:50%; height:auto%; max-width: 400px;">
-				<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; max-width: 700px;" >	
-					A local/online multiplayer platformer game with the ultimate goal of finding out which one of you 
-					and your friends can give the best bath!<br>
-				</p>
-				<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 700px;" >
-					Made with Unreal Engine 4<br>
-					<a href="https://store.steampowered.com/app/1283630/Frog_Bath/" target="_blank" rel="noopener noreferrer" class="link">Available for free on Steam! </a>
-				</p>
-				<br>
-				<div class="list-container">
-					<div style="text-align: center; padding-bottom: 10px; font-size: 18px"><b>My Contributions!</b></div>
-					
-					
-					<ul>
-						<li>Lead Programmer</li>
-						<li>Programming the Player Movement</li>
-						<li>Animation Programming</li>
-						<li>Organizing Programmer Meeting and Helping with General Programming Tasks</li>
-					</ul>
-					
-				</div>
-				<br>
 			
-				<div class="auto-resizable-iframe">
-					<div>
-						<iframe frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/1VGP2ESc2FU"></iframe>
-					</div>
-				</div>
-				<br>
-			</div>
 			
-			<div id = "SuperGoatDeath" class="center" style="padding-bottom: 30px;">
-			
-				<div class="mainRunner" id="GoatDeathContainer" style="">
-					<img class="img1 rotate pixelart" src="Pentagram.png"  style="width:20%; height:auto%; max-width: 170px;" />
-					<img class="img2 pixelart" id="SuperGoatDeathTitle" src="SuperGoatDeath.gif"  style="width:90%; height:auto%; max-width: 650px;"/>
-				</div>
+
+			<div class="tab-content">
+				<div id="home" data-tab-content class="active">
 				
-				<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 700px; position: relative;" >	
-					An intense Twin Stick Bullet Hell where it is your job to get rid of Demons that have made there way out of Hell.<br>
+					<div id = "FrogBath" class="center" style="padding-bottom: 30px;">
+						<!--<img id = "FrogBathTitle" src="FrogBath.png" class="center" style="width:50%; height:auto%; max-width: 400px;">-->
+						<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; max-width: 700px;" >	
+							A local/online multiplayer platformer game with the ultimate goal of finding out which one of you 
+							and your friends can give the best bath!<br>
+						</p>
+						<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 700px;" >
+							<a href="https://store.steampowered.com/app/1283630/Frog_Bath/" target="_blank" rel="noopener noreferrer" class="link">Available for free on Steam! </a> <br><br>
+							Made with Unreal Engine 4 <img src="UnrealIcon.png" class="" style="height: 50px; width: auto; padding-left: 10px"/><br>
+						</p>
+						<br>
+						<div class="list-container">
+							<div style="text-align: center; padding-bottom: 10px; font-size: 18px"><b>My Contributions!</b></div>
+							
+							
+							<ul>
+								<li>Lead Programmer</li>
+								<li>Programming the Player Movement</li>
+								<li>Animation Programming</li>
+								<li>Organizing Programmer Meeting and Helping with General Programming Tasks</li>
+							</ul>
+							
+						</div>
+						<br>
+					
+						<div class="auto-resizable-iframe">
+							<div>
+								<iframe frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/1VGP2ESc2FU"></iframe>
+							</div>
+						</div>
+						<br>
+					</div>
+			
+				</div>
+				<div id="pricing" data-tab-content>
+				
+			
+					<div id = "SuperGoatDeath" class="center" style="padding-bottom: 30px;">
+					
+						<!--<div class="mainRunner" id="GoatDeathContainer" style="">
+							<img class="img1 rotate pixelart" src="Pentagram.png"  style="width:20%; height:auto%; max-width: 170px;" />
+							<img class="img2 pixelart" id="SuperGoatDeathTitle" src="SuperGoatDeath.gif"  style="width:90%; height:auto%; max-width: 650px;"/>
+						</div>-->
 						
-				</p>
-				<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 600px;" >
-					Made with Unity<br>
-					<a href="https://d-tommy-d.itch.io/supergoatdeath" target="_blank" rel="noopener noreferrer" class="link">Available for free on Itch.io! </a>
-				</p>
-				<br>
-				<div class="list-container">
-					<div style="text-align: center; padding-bottom: 10px; font-size: 18px"><b>My Contributions!</b></div>
+						<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 700px; position: relative;" >	
+							An intense Twin Stick Bullet Hell where it is your job to get rid of Demons that have made there way out of Hell.<br>
+								
+						</p>
+						<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 600px;" >
+						<a href="https://d-tommy-d.itch.io/supergoatdeath" target="_blank" rel="noopener noreferrer" class="link">Available for free on Itch.io! </a><br><br>
+							Made with Unity <img src="UnityIcon.png" class="" style="height: 40px; width: auto; padding-left: 10px"/><br>
+							
+						</p>
+						<br>
+						<div class="list-container">
+							<div style="text-align: center; padding-bottom: 10px; font-size: 18px"><b>My Contributions!</b></div>
+							
+							
+							<ul>
+								<li>Everything! (Solo Project)</li>
+								<li>Programmed/Designed Player Movement, Bullet Patterns, Boss AI, Menus, Audio Behaviour, and Tutorial</li>
+								<li>Drew Unique Art Assets that drip with style!</li>
+							</ul>
+							
+						</div>			
+						
+						<br>
 					
-					
-					<ul>
-						<li>Programmed Player Movement, Bullet Patterns, Boss AI, Menus, Audio Behaviour, and Tutorial</li>
-						<li>Drew Unique Art Assets that drip with style!</li>
-					</ul>
-					
-				</div>			
+						<div class="auto-resizable-iframe">
+							<div>
+								<iframe frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/wbdGUs2za4M"></iframe>
+							</div>
+						</div>
+						<br>
+					</div>
 				
-				<br>
-			
-				<div class="auto-resizable-iframe">
-					<div>
-						<iframe frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/wbdGUs2za4M"></iframe>
+				</div>
+				<div id="about" data-tab-content>
+				
+		
+					<div class="center " style= "padding-bottom: 30px;">
+					
+						<img id="SealedSorcery" src="SealedSorcery.png"  class="center pixelart" style="width:70%; height:auto%; max-width: 800px;"/>
+						<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 700px; position: relative;" >	
+							A local/online Smash Brothers like game with a twist in that players are only able to use their special abilities once per round. Made for the 2018 Touhou Game Jam.<br>
+							<br>
+						</p>
+						<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 700px;" >
+						<a href="https://361rjb.itch.io/sealed-sorcery" target="_blank" rel="noopener noreferrer" class="link">Available for free on Itch.io! </a><br><br>
+							Made with Unity <img src="UnityIcon.png" class="" style="height: 40px; width: auto; padding-left: 10px"/><br>
+							
+						</p>
+						<br>
+						<div class="list-container">
+							<div style="text-align: center; padding-bottom: 10px; font-size: 18px"><b>My Contributions!</b></div>
+							<ul>
+								<li>Physics Programming</li>
+								<li>Attack/Animation Programming</li>
+								<li>Network Programming</li>
+							</ul>
+						</div>			
+						
+						<br>
+						
+						<img id="SealedSorceryMatch" src="SealedSorceryMatch.png"  class="center pixelart" style="width:70%; height:auto%; max-width: 800px;"/>
+						<br>
 					</div>
 				</div>
-				<br>
 			</div>
-		<!-- </div> -->	
 		
 		<!-- <div class="w3-row "  				<div class="center w3-container w3-half w3-border" style= "padding-top:0px">-->  
 			<div class="center " style= "padding-bottom: 30px;">
 			
 				<img id="Navai" src="Navai.png"  class="center pixelart" style="width:70%; height:auto%; max-width: 800px;"/>
 				<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 700px; position: relative;" >	
-					A tool for the Unity Engine that allows users to create NavMeshes and generate believable AI routes. 
-						It is still in development and unreleased, but is progress on it has been consistent and fast!<br>
+					A tool for the Unity Engine that allows users to create NavMeshes and generate believable AI routes. <br>
 					
 						<br>
+						
+
 				</p>
 				<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 700px;" >
-					Made with Unity<br>
+					Made with Unity <img src="UnityIcon.png" class="" style="height: 40px; width: auto; padding-left: 10px"/><br><br>
 				</p>
-				<br>
 				<div class="list-container">
 					<div style="text-align: center; padding-bottom: 10px; font-size: 18px"><b>My Contributions!</b></div>
 					<ul>
-						<li>Tool for users to create their own Navigation Meshes</li>
-						<li>A Star path finding which finds the most optimal route in a set of Nodes on a Mesh</li>
-						<li>My own original Path Smoothing like Algorithm (still don't know what to call it) 
-										where a set of points on a mesh can be both optimized and made to be a much more believable (no zig zagging ai!)</li>
+						<li>Everything! (Solo Project)</li>
+						<li>Tools that allow for users to make, delete, and merge points on a mesh</li>
+						<li>Path Finding which finds the most optimal route in a set of Nodes on a Mesh</li>
+						<li>My own original Path Smoothing Algorithm where given a set of points on a mesh a route is created that looks a lot more organic </li>
 					</ul>
 				</div>			
 				
@@ -205,32 +301,94 @@
 			
 			<div class="center " style= "padding-bottom: 30px;">
 			
-				<img id="SealedSorcery" src="SealedSorcery.png"  class="center pixelart" style="width:70%; height:auto%; max-width: 800px;"/>
+				<img id="CurvyGamesTool" src="CurvyGamesTool.gif"  class="center pixelart" style="width:70%; height:auto%; max-width: 800px;"/>
 				<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 700px; position: relative;" >	
-					A local/online Smash Brothers like game with a twist in that players are only able to use their special abilities once per round. Made for the 2018 Touhou Game Jam.<br>
+					A tool for the Unity Engine that allows developers to create intricate 2.5D games using 3D Bezier Curves.
+					Games made with this tool let the player interact with the Z-Axis in a way that regular 2D games don't!
+					
 					<br>
+					
+						<br>
 				</p>
 				<p class="center" style="text-align: center; padding-left: 5%; padding-right: 5%; padding-top: 10px; max-width: 700px;" >
-					Made with Unity<br>
-					<a href="https://361rjb.itch.io/sealed-sorcery" target="_blank" rel="noopener noreferrer" class="link">Available for free on Itch.io! </a>
-					
+					Made with Unity <img src="UnityIcon.png" class="" style="height: 40px; width: auto; padding-left: 10px"/><br>
 				</p>
 				<br>
 				<div class="list-container">
 					<div style="text-align: center; padding-bottom: 10px; font-size: 18px"><b>My Contributions!</b></div>
 					<ul>
-						<li>Physics Programming</li>
-						<li>Attack/Animation Programming</li>
-						<li>Network Programming</li>
+						<li>Everything! (Solo Project)</li>
+						<li>Tools for making Bezier Curves in a 3D space</li>
+						<li>Tools for editing the Normals on Curve</li>
+						<li>Custom Handles that allow for more direct control than the ones provided by unity</li>
+						<li>Player and AI Movement on Bezier Curves</li>
+						<li>Custom Collision Detection</li>
 					</ul>
 				</div>			
-				
 				<br>
-				
-				<img id="SealedSorceryMatch" src="SealedSorceryMatch.png"  class="center pixelart" style="width:70%; height:auto%; max-width: 800px;"/>
-				
+				<div class="auto-resizable-iframe">
+					<div>
+						<iframe frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/CxhZnzJUAKY"></iframe>
+					</div>
+				</div>
+				<br>
 			</div>
+			
+			
 		<!-- </div> -->
+	</section>
+	
+	
+	
+	<section id="music" style=" background-color: #121212; ">
+		<h1 style="text-align: center; background-color: #010012;
+			margin: 0px 0px 0px 0px; 
+			padding: 5px 0px 5px 0px;">	
+			Music 	</h1>
+			
+			<br>
+			<p style="text-align: center; width: 94%" class="center">I got a classical guitar in January 2022 and have been learning some video game songs on it.
+			<br>
+			</p>
+			
+			<div class="center" style="text-align: center;padding-top: 10px;padding-bottom: 10px; padding-bottom: 30px; ">
+				<div class="w3-row center" style="padding-left: 0px; width: 100%;">
+					<div class="w3-container w3-third ">
+						<article>
+							<div class="cont">
+								<h2 style="color: black; font-size: 23px">Eterna Forest - Pokemon</h2>
+							</div>
+							<audio class="audio" controls="controls" style="width:90%">
+								<source type="audio/mp3" src="EternaForest.mp3">
+							</audio>
+							
+						</article>
+					</div>
+					<div class="w3-container w3-third ">
+						<article>
+							<div class="cont">
+								<h2 style="color: black;">Astral Observatory - Majora's Mask</h2>
+							</div>
+							<audio class="audio" controls="controls" style="width:90%">
+								<source type="audio/mp3" src="AstralObservatory.mp3">
+							</audio>
+							
+						</article>
+					</div>
+					<div class="w3-container w3-third ">
+						<article>
+							<div class="cont">
+								<h2 style="color: black;">Life is Beautiful - Deadly Premonition</h2>
+							</div>
+							<audio class="audio" controls="controls" style="width:90%">
+								<source type="audio/mp3" src="LifeIsBeautiful.mp3">
+							</audio>
+							
+						</article>
+					</div>
+				</div>
+				
+			<br>
 	</section>
 	
 	<div style="padding-left: 15px; padding-right: 15px; padding-bottom: 15px;">

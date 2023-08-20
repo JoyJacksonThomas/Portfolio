@@ -1,3 +1,6 @@
+
+
+
 function toggleMobileMenu() {
     //menu.classList.toggle('open');
 	document.getElementById("hamburger-icon").classList.toggle('open');
@@ -54,4 +57,8 @@ window.onresize = function() {
 	//	FrogBath.style.paddingBottom = diff;
 	//}
 };
+
+$('audio').mediaelementplayer({
+	features: ['playpause','progress','current','tracks','fullscreen']
+});
 
